@@ -38,8 +38,14 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 180.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
@@ -54,7 +60,33 @@ class MyApp extends StatelessWidget {
                         color: Colors.teal.shade900),
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 60.0,
+              ),
+              Text(
+                'Scan To Connect With Me:',
+                style: TextStyle(
+                  color: Colors.teal.shade100,
+                  fontSize: 15.0,
+                ),
+              ),
+              Image(
+                width: 180.0,
+                image: AssetImage('images/qrcode.jpg'),
+              ),
+              Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text(
+                  'Linkedin QR Code',
+                  style: TextStyle(
+                    fontFamily: 'SourceSans',
+                    fontSize: 15.0,
+                    color: Colors.teal.shade100,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
