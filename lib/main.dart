@@ -38,27 +38,21 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.mail_outline,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'jerome.chuame@gmail.com',
-                      style: TextStyle(
-                          fontFamily: 'SourceSans',
-                          fontSize: 18.0,
-                          color: Colors.teal.shade900),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail_outline,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'jerome.chuame@gmail.com',
+                    style: TextStyle(
+                        fontFamily: 'SourceSans',
+                        fontSize: 18.0,
+                        color: Colors.teal.shade900),
+                  ),
                 ),
               )
             ],
