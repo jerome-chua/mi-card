@@ -19,9 +19,13 @@ dev_dependencies:
 
 
 flutter:
-
   uses-material-design: true
-
   assets:
     - images/jerome.jpg
-
+  fonts:
+    - family: 'Allura'
+      fonts:
+        - asset: fonts/Allura-Regular.ttf
+    - family: 'SourceSans'
+      fonts:
+        - asset: fonts/SourceSansPro-Light.ttf
